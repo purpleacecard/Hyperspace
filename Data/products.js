@@ -120,7 +120,7 @@ let userData = [
     email: 'GUEST@EXAMPLE.COM',
     userName: 'Guest',
     password: 'HYPERSPACE',
-    profile: '../Resources/profile/guest.svg',
+    profile: '../../Resources/profile/guest.svg',
   },
   {
     firstName: 'Victor',
