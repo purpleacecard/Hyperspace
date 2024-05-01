@@ -148,7 +148,7 @@ function searchItems() {
     const productName = String(item.name).toUpperCase();
     if (productName.includes(query)) {
       console.log(item);
-      searchResult.innerHTML += `<a href="pages/Selected-product/Selected-product.html" class="link-style"><div id="${item.id}" class="search-option js-search-option">${item.name}</div></a>`;
+      searchResult.innerHTML += `<a href="Pages/Selected-product/Selected-product.html" class="link-style"><div id="${item.id}" class="search-option js-search-option">${item.name}</div></a>`;
       searchOption = document.querySelectorAll('.js-search-option');
       resetListners();
     }
