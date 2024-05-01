@@ -271,19 +271,21 @@ function fillOrderSummary() {
   calculateShippingFee();
   let total = 0;
   let tax;
+  totalItemNumber = 0;
   let formattedItemsPayment;
   let formattedShippingFee;
   let formattedTotalBeforeTax;
   let formattedEstimatedTax;
   let formattedOrderTotal;
   cart.forEach((item) => {
-    itemCount.innerText = `Items (${cart.length})`;
+    totalItemNumber += item.quantity;
     if (currencySelectElement.value == 'naira') {
-      total += Number(item.priceKobo) / 100;
+      total += (Number(item.priceKobo) * item.quantity) / 100;
     } else {
-      total += Number(item.priceCents) / 100;
+      total += (Number(item.priceCents) * item.quantity) / 100;
     }
   });
+  itemCount.innerText = `Items (${totalItemNumber})`;
   tax = total * 0.1;
   formattedItemsPayment = total.toFixed(2);
   if (currencySelectElement.value == 'naira') {
