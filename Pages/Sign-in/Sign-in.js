@@ -57,7 +57,7 @@ function authorizeUser() {
 
 function validateUser(user) {
   errorMessage.innerHTML =
-    '<img src="../../Resources/SVG/icons/checkmark.png" width="50px" height="50px">Verified';
+    '<img src="../../Resources/SVG/Icons/Checkmark.png" width="50px" height="50px">Verified';
   errorContainer.style = 'display: flex;';
   setTimeout(() => {
     errorContainer.style = 'display: none;';

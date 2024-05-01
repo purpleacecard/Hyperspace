@@ -132,7 +132,7 @@ cartCount();
 
 //Clean up codes
 function resetCounter() {
-  counterNum.innerHTML = `<img src="../../Resources/svg/icons/checkmark.png" width="15px"> Added`;
+  counterNum.innerHTML = `<img src="../../Resources/svg/Icons/Checkmark.png" width="15px"> Added`;
   setTimeout(() => {
     counterNum.innerHTML = 1;
   }, 3000);
