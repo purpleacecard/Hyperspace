@@ -162,7 +162,7 @@ function createItemCards() {
               Choose a delivery option:
             </div>
   
-            <div class="delivery-option">
+            <label class="delivery-option">
               <input type="radio" class="delivery-option-input js-delivery-option-input"
                 name="delivery-option-${index}" data-feeid="0">
               <div>
@@ -173,8 +173,8 @@ function createItemCards() {
                   FREE Shipping
                 </div>
               </div>
-            </div>
-            <div class="delivery-option">
+            </label>
+            <label class="delivery-option">
               <input type="radio" checked class="delivery-option-input js-delivery-option-input"
                 name="delivery-option-${index}" data-feeid="1">
               <div>
@@ -185,8 +185,8 @@ function createItemCards() {
                   $4.99 - Shipping
                 </div>
               </div>
-            </div>
-            <div class="delivery-option">
+            </label>
+            <label class="delivery-option">
               <input type="radio" class="delivery-option-input js-delivery-option-input"
                 name="delivery-option-${index}" data-feeid="2">
               <div>
@@ -197,7 +197,7 @@ function createItemCards() {
                   $9.99 - Shipping
                 </div>
               </div>
-            </div>
+            </label>
           </div>
         </div>
       </article>
